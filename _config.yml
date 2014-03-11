@@ -1,8 +1,10 @@
-name: PHP Design Pattern
-markdown: redcarpet
-pygments: true
+name:         Anhskohbo Blog
+description:  Blog of Anhskohbo
+url:          http://http://anhskohbo.github.io
 
-permalink: none
+markdown:     redcarpet
+pygments:     true
+permalink:    none
 
-host: localhost
-port: 9000
+host:         localhost
+port:         9000
