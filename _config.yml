@@ -1,0 +1,8 @@
+name: PHP Design Pattern
+markdown: redcarpet
+pygments: true
+
+permalink: none
+
+host: localhost
+port: 9000
