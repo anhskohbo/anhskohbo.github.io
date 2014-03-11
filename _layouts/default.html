@@ -18,9 +18,8 @@
         <!-- Stylesheet -->
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/font-awesome.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
         
         <!-- Modernizr & jQuery -->
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -30,37 +29,62 @@
     </head>
     <body>
 
-        <!-- Contents -->
+        <!-- Header -->
         <header>
-            <a href="/" title="Anhskohbo">
-                <img id="avatar" src="https://gravatar.com/avatar/a18507c3f61d2bda47fde08f31ba6c38?s=200" alt="anhsk.ohbo@gmail.com">
-            </a>
+            <div class="container">
 
-            <ul class="posts">
-                {% for post in site.posts limit:5 %}
-                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </header>
+                <a href="/" title="Anhskohbo">
+                    <img id="avatar" src="https://gravatar.com/avatar/a18507c3f61d2bda47fde08f31ba6c38?s=200" alt="anhsk.ohbo@gmail.com">
+                </a>
 
-        <div class="site">
-            <div class="header">
-                <h1 class="title">
-                    <a href="/">{{ site.name }}</a>
-                </h1>
-                <a class="extra" href="/">home</a>
+                <hgroup>
+                    <h1><a href="/" title="Nguyễn Văn Ánh">Nguyễn Văn Ánh</a></h1>
+                    <h2>PHP Developer</h2>
+                </hgroup>
+
+                Recent Posts
+
+                <ul class="posts">
+                    {% for post in site.posts limit:5 %}
+                        <li>
+                            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                <div class="social-links">
+                    <a title="Follow me on Twitter" target="_blank" href="https://twitter.com/anhskohbo">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a title="Fork me on Github" target="_blank" href="https://github.com/anhskohbo">
+                        <span class="fa fa-github"></span>
+                    </a>
+                    <a title="Add me on Google+" target="_blank" href="https://google.com/+nguyenvananh-anhskohbo">
+                        <span class="fa fa-google-plus"></span>
+                    </a>
+                    <a title="Subscribe to my feed" target="_blank" href="/feed.xml">
+                        <span class="fa fa-rss"></span>
+                    </a>
+                </div>
+            </div>
+        </header><!-- /#header -->
+        
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Content -->
+            <div class="container">
+                {{ content }}
             </div>
             
-            {{ content }}
-
+            <!-- Footer -->
             <footer>
                 <p>
-                    &copy; 2014 by
-                    <a href="http://github.com/anhskohbo" title="Anhskohbo">anhskohbo</a>
-                    .
+                    &copy; 2014 by <a href="http://github.com/anhskohbo" title="Anhskohbo">anhskohbo</a>.
+                    Hosted on <a href="http://github.com" title="Github">Github</a>.
                 </p>
-            </footer>
-        </div>
+            </footer><!-- /#footer -->
+        </div><!-- /#main -->
 
         <!-- App Scripts -->
         <script src="/js/plugins.js"></script>
