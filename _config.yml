@@ -1,13 +1,15 @@
 name:          anhskohbo
-description:   Blog of Anhskohbo
-url:           http://http://anhskohbo.github.io
+description:   'Blog of Anhskohbo'
+url:           'http://http://anhskohbo.github.io'
 
+timezone:      Asia/Saigon
 markdown:      redcarpet
 pygments:      true
-permalink:     none
 
+permalink:     none
 paginate:      5
 paginate_path: page-:num
 
 host:          localhost
 port:          9000
+exclude:       ['*.less']
