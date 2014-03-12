@@ -111,9 +111,21 @@ h6 {
     font-weight: 400;
 }
 
+.blue {
+    color: #4ECDC4;
+}
+
+.red {
+    color: #FF6B6B;
+}
+
+.gray {
+    color: #556270;
+}
+
 .container {
-    padding-left: 35px;
-    padding-right: 35px; 
+    padding-left: 25px;
+    padding-right: 25px; 
 }
 
 .container:before,
@@ -166,6 +178,14 @@ a.button {
     padding-bottom: 6px;
 }
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
 header {
     background: #556270;
     display: block;
@@ -180,9 +200,11 @@ header {
 }
 
 header #avatar {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    display: block;
+    margin: auto;
 
     -moz-transition-duration: 0.3s;
         -webkit-transition-duration: 0.3s;
@@ -221,7 +243,7 @@ header h2 {
 .social-links {
     position: absolute;
     bottom: 25px;
-    margin-left: 20px;
+    margin-left: 25px;
     width: auto;
     z-index: 2;
 }
@@ -257,11 +279,15 @@ header h2 {
     clear: both;
 }
 
-
-.cover > .container {
-    position: relative;
+.post > h1 {
+    display: block;
+    margin: 0;
+    padding: 15px 25px;
 }
 
+.post > h1 > a {
+
+}
 
 #comment {
     margin-top: 35px;
@@ -270,7 +296,7 @@ header h2 {
 
 
 footer {
-    margin: 35px 25px 0; 
+    margin: 35px 35px 0; 
     border-top: solid 1px #ddd;
     padding: 15px 0;
 }
@@ -284,6 +310,12 @@ footer p {
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px; 
+    }
+
     header {
         position: relative !important;
         left: 0 !important;
