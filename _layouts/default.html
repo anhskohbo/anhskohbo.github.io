@@ -6,21 +6,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ page.title }} :: Anhskohbo</title>
+        <title>{{ page.title }} - anhskohbo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Metadata -->
         <meta name="description" content="">
         
-        <!-- Goole Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin,vietnamese' rel='stylesheet' type='text/css'>
-       
+        <!-- Google Fonts & Font-awesome -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin,vietnamese' rel='stylesheet'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
         <!-- Stylesheet -->
         <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/font-awesome.css">
-        <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
-        
+        <link rel="stylesheet" href="/css/syntax.css">
+
         <!-- Modernizr & jQuery -->
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -42,16 +42,6 @@
                     <h2>PHP Developer</h2>
                 </hgroup>
 
-                Recent Posts
-
-                <ul class="posts">
-                    {% for post in site.posts limit:5 %}
-                        <li>
-                            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-
                 <div class="social-links">
                     <a title="Follow me on Twitter" target="_blank" href="https://twitter.com/anhskohbo">
                         <span class="fa fa-twitter"></span>
@@ -72,16 +62,19 @@
         <!-- Main -->
         <div id="main">
 
-            <!-- Content -->
             <div class="container">
-                {{ content }}
+                Cập nhật lần cuối: <em>{{ site.time | date: "%d/%m/%Y" }}</em>
             </div>
+
+            <!-- Content -->
+            {{ content }}
             
             <!-- Footer -->
             <footer>
                 <p>
-                    &copy; 2014 by <a href="http://github.com/anhskohbo" title="Anhskohbo">anhskohbo</a>.
-                    Hosted on <a href="http://github.com" title="Github">Github</a>.
+                    &copy; 2014 <a href="http://github.com/anhskohbo" title="Anhskohbo">anhskohbo</a>.
+                    Hosted by <a href="http://github.com" title="Github">Github</a>.
+                    Powered by <a href="http://jekyllrb.com">Jekyll</a>.
                 </p>
             </footer><!-- /#footer -->
         </div><!-- /#main -->
