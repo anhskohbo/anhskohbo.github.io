@@ -1,10 +1,13 @@
-name:         Anhskohbo Blog
-description:  Blog of Anhskohbo
-url:          http://http://anhskohbo.github.io
+name:          Anhskohbo Blog
+description:   Blog of Anhskohbo
+url:           http://http://anhskohbo.github.io
 
-markdown:     redcarpet
-pygments:     true
-permalink:    none
+markdown:      redcarpet
+pygments:      true
+permalink:     none
 
-host:         localhost
-port:         9000
+paginate:      5
+paginate_path: page-:num
+
+host:          localhost
+port:          9000
