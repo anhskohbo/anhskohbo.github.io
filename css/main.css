@@ -225,13 +225,13 @@ header hgroup {
     text-align: center;
 }
 
-header h1,
-header h1 a,
-header h2 {
+header hgroup h1,
+header hgroup h1 a,
+header hgroup h2 {
     color: #fff;
 }
 
-header h1 {
+header hgroup h1 {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -239,7 +239,12 @@ header h1 {
     text-transform: uppercase;
 }
 
-header h2 {
+header hgroup h1 a:hover {
+    color: #354350;
+    text-decoration: none;
+}
+
+header hgroup h2 {
     font-size: 14px;
     margin: 0 0 20px;
     text-transform: uppercase;
