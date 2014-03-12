@@ -6,12 +6,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ page.title }} - anhskohbo</title>
+        <title>{{ page.title }} - {{ site.name }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <!-- Metadata -->
-        <meta name="description" content="">
-        
+        <meta name="robots" content="index,follow,archive"/>
+        <meta name="description" content="{{ site.description }}">
+        <meta property="og:image" content="/img/avatar.jpg"/>
+        <meta property="og:title" content="{{ site.name }}"/>
+        <meta property="og:description" content="{{ site.description }}"/>
+        <meta property="og:url" content="{{ site.url }}"/>
+        <meta property="og:site_name" content="{{ site.name }}"/>
+        <meta property="og:type" content="website"/>
+
         <!-- Google Fonts & Font-awesome -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin,vietnamese' rel='stylesheet'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -34,7 +41,7 @@
             <div class="container">
 
                 <a href="/" title="Anhskohbo">
-                    <img id="avatar" src="https://gravatar.com/avatar/a18507c3f61d2bda47fde08f31ba6c38?s=200" alt="anhsk.ohbo@gmail.com">
+                    <img id="avatar" src="/img/avatar.jpg" alt="anhsk.ohbo@gmail.com">
                 </a>
 
                 <hgroup>
@@ -62,15 +69,18 @@
         <!-- Main -->
         <div id="main">
 
-            <div class="container">
-                Cập nhật lần cuối: <em>{{ site.time | date: "%d/%m/%Y" }}</em>
+            <div class="main-cover">
+                <div class="container">
+                    <p class="last-update">Cập nhật lần cuối: <a href="/" title="{{ site.name }}"><em>{{ site.time | date: "%d/%m/%Y" }}</em></a></p>
+                    <p class="image-author">Image by <a href="http://www.flickr.com/photos/gutodisse/8133587814/in/pool-2535978@N21" title="Gustavo Marques">@gutodisse</a></p>
+                </div>
             </div>
 
             <!-- Content -->
             {{ content }}
             
             <!-- Footer -->
-            <footer>
+            <footer class="container">
                 <p>
                     &copy; 2014 <a href="http://github.com/anhskohbo" title="Anhskohbo">anhskohbo</a>.
                     Hosted by <a href="http://github.com" title="Github">Github</a>.

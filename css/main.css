@@ -128,6 +128,10 @@ h6 {
     padding-right: 25px; 
 }
 
+.container:after {
+    clear: both;
+}
+
 .container:before,
 .container:after {
     content: " ";
@@ -186,6 +190,7 @@ a.button {
     float: right;
 }
 
+/* Header */
 header {
     background: #556270;
     display: block;
@@ -270,38 +275,85 @@ header h2 {
     opacity: 1;
 }
 
+/* Main */
 #main {
     margin-left: 250px;
     padding: 0;
 }
 
-#main .container:after {
-    clear: both;
+#main > .main-cover {
+    color: #eee;
+    height: 235px;
+    background: url('../img/post-cover.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+            background-size: cover;
+}
+
+#main > .main-cover a {
+    color: #eee;
+}
+
+#main > .main-cover .container {
+    position: relative;
+    height: 235px;
+}
+
+#main > .main-cover .image-author {
+    color: #eee;
+    font-size: 11px;
+    background: rgba(0,0,0,.5);
+    padding: 2px 7px;
+    margin-right: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#main > .main-cover .image-author:hover {
+    opacity: 0.75;
+}
+
+#main > .main-cover .image-author a {
+    text-decoration: underline;
+}
+
+#main > .main-cover .last-update {
+    text-align: right;
+    font-size: 12px;
+}
+
+
+/* Post */
+
+.post {
+    margin-bottom: 25px;
+    border-bottom: solid 1px #ddd;
 }
 
 .post > h1 {
-    display: block;
-    margin: 0;
-    padding: 15px 25px;
+
 }
 
 .post > h1 > a {
 
 }
 
+
+/* View post */
 #comment {
     margin-top: 35px;
 }
 
 
-
+/* Footer */
 footer {
-    margin: 35px 35px 0; 
-    border-top: solid 1px #ddd;
-    padding: 15px 0;
+    margin: 35px 0 0; 
 }
 
 footer p {
+    border-top: solid 1px #ddd;
+    padding: 15px 0;
     color: #999;
     font-size: 12px;
     text-align: center;
