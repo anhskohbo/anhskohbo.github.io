@@ -11,10 +11,7 @@ paginate:         1
 paginate_path:    page-:num
 
 # Setup
-title:            'anhskohbo'
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:              'http://anhskohbo.github.io'
-author:
-    name:         'Nguyễn Văn Ánh'
-    url:          'https://twitter.com/anhskohbo'
+name:             'anhskohbo'
+description:      'Nguyễn Văn Ánh BLOG'
+author:           'Nguyễn Văn Ánh'

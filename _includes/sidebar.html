@@ -2,30 +2,49 @@
     <div class="container sidebar-sticky">
 
         <div class="sidebar-about">
-            <a class="avatar" href="/" title="{{ site.author.name }}">
-                <img src="/img/avatar.jpg" alt="{{ site.author.name }}">
+            <a class="avatar" href="/" title="{{ site.author }}">
+                <img src="/img/avatar.jpg" alt="{{ site.author }}">
             </a>
-            <h1><a href="/">{{ site.title }}</a></h1>
-            <p class="lead">{{ site.description }}</p>
+            <h1>
+                <a href="/" title="{{ site.author }}">{{ site.name }}</a>
+            </h1>
+            <p class="lead">PHP, CSS3, HTML5, Javascript, NodeJS, Linux</p>
         </div>
 
         <ul class="sidebar-nav">
             <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
-                <a href="/">Home</a>
+                <a href="/" title="Home">Home</a>
             </li>
-            {% assign pages_list = site.pages %}
-            {% for node in pages_list %}
+            {% for node in site.pages %}
                 {% if node.title != null %}
                     {% if node.layout == "page" %}
                         <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
-                            <a href="{{ node.url }}">{{ node.title }}</a>
+                            <a href="{{ node.url }}" title="{{ node.title }}">{{ node.title }}</a>
                         </li>
                     {% endif %}
                 {% endif %}
             {% endfor %}
         </ul>
 
-        <p>Cập nhật lần cuối: <em>{{ site.time | date: "%d/%m/%Y" }}</em></p>
+        <div class="social-links">
+            <a title="Twitter" target="_blank" href="https://twitter.com/anhskohbo">
+                <i class="fa fa-twitter"></i>
+            </a>
+
+            <a title="Github" target="_blank" href="https://github.com/anhskohbo">
+                <i class="fa fa-github"></i>
+            </a>
+
+            <a title="Google+" target="_blank" href="https://google.com/+nguyenvananh-anhskohbo">
+                <i class="fa fa-google-plus"></i>
+            </a>
+
+            <a title="Subscribe" target="_blank" href="/atom.xml">
+                <i class="fa fa-rss"></i>
+            </a>
+        </div>
+
+        <p>Cập nhật cuối <em>{{ site.time | date: "%d/%m/%Y" }}</em></p>
 
     </div>
 </div>

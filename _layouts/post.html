@@ -10,8 +10,16 @@ layout: default
         <span>{{ page.date | | date: "%d/%m/%Y %H:%m" }}</span>
     </div>
 
+    <div class="post-share">
+        
+    </div>
+
     <div class="post-content">
         {{ content }}
+    </div>
+
+    <div class="post-tags">
+        
     </div>
 </div>
 
@@ -21,9 +29,9 @@ layout: default
         {% for post in site.related_posts limit:3 %}
         <li>
             <h3>
-                <a href="{{ post.url }}">
-                    {{ post.title }}
-                    <small>{{ post.date | | date: "%d/%m/%Y" }}</small>
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <span>{{ post.title }}</span>
+                    <small>{{ post.date| date: "%d/%m/%Y" }}</small>
                 </a>
             </h3>
         </li>
