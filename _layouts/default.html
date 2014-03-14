@@ -27,8 +27,9 @@
 
         <!-- Stylesheet -->
         <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/foundation.min.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Modernizr & jQuery -->
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -55,12 +56,15 @@
                     <li>
                         <a target="_blank" href="http://anhskohbo.github.io/php-the-right-way/" title="PHP: Đúng cách">PHP: Đúng cách</a>
                     </li>
+
                     <li>
                         <a target="_blank" href="http://saskphp.com/" title="Saskphp Framework">Saskphp Framework</a>
                     </li>
+
                     <li>
                         <a href="/archive.html#php-design-pattern" title="PHP Design Pattern">PHP Design Pattern</a>
                     </li>
+
                     <li>
                         <a href="/archive.html#laravel" title="Laravel tutorials">Laravel tutorials</a>
                     </li>
@@ -71,19 +75,19 @@
                 </p>
 
                 <div class="social-links">
-                    <a title="Twitter" target="_blank" href="https://twitter.com/anhskohbo">
+                    <a data-toggle="tooltip" title="Twitter" target="_blank" href="https://twitter.com/anhskohbo">
                         <i class="fa fa-twitter"></i>
                     </a>
 
-                    <a title="Github" target="_blank" href="https://github.com/anhskohbo">
+                    <a data-toggle="tooltip" title="Github" target="_blank" href="https://github.com/anhskohbo">
                         <i class="fa fa-github"></i>
                     </a>
 
-                    <a title="Google+" target="_blank" href="https://google.com/+nguyenvananh-anhskohbo">
+                    <a data-toggle="tooltip" title="Google+" target="_blank" href="https://google.com/+nguyenvananh-anhskohbo">
                         <i class="fa fa-google-plus"></i>
                     </a>
 
-                    <a title="Subscribe" target="_blank" href="/feed.xml">
+                    <a data-toggle="tooltip" title="Subscribe" target="_blank" href="/feed.xml">
                         <i class="fa fa-rss"></i>
                     </a>
                 </div>
@@ -93,6 +97,14 @@
         
         <!-- Main -->
         <div id="main">
+            
+            <!-- Main cover -->
+            <section class="main-cover">
+                <div class="container">
+                    <p class="last-update">Cập nhật lần cuối: <a href="/" title="{{ site.name }}"><em>{{ site.time | date: "%d/%m/%Y" }}</em></a></p>
+                    <p class="image-author">Image by <a href="http://www.flickr.com/photos/gutodisse/8133587814/in/pool-2535978@N21" target="_blank" title="Gustavo Marques">@gutodisse</a></p>
+                </div>
+            </section>
 
             <!-- Content -->
             {{ content }}
@@ -108,6 +120,7 @@
         </div><!-- /#main -->
 
         <!-- App Scripts -->
+        <script src="/js/foundation.min.js"></script>
         <script src="/js/plugins.js"></script>
         <script src="/js/main.js"></script>
 

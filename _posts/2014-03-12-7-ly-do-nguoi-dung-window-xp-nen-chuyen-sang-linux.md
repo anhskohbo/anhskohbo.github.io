@@ -1,22 +1,16 @@
 ---
-layout: post
-title:  7 lý do người dùng Windows XP nên chuyển sang Linux
-date:   2014-03-12 17:52:00
+layout:     post
+title:      7 lý do người dùng Windows XP nên chuyển sang Linux
+thumb:      /img/thumbs/7-ly-do-nguoi-dung-window-xp-nen-chuyen-sang-linux.png
+date:       2014-03-12 17:52:00
 categories: linux
 ---
-
-7 lý do người dùng Windows XP nên chuyển sang Linux
----
-
-![http://storage8.static.itmages.com/i/14/0304/h_1393972255_9612987_9c1072844d.png](http://storage8.static.itmages.com/i/14/0304/h_1393972255_9612987_9c1072844d.png)
-
 
 Tôi đang lang thang đọc tut lập trình trên mạng thì lại bắt gặp 1 tit: "[Windows XP home users should upgrade to Linux...]("http://betanews.com/2014/01/30/windows-xp-home-users-should-upgrade-to-linux-not-windows-8-1/")".
 Chuyện là gần đây, cũng đến cái ngày Windows XP bị khai tử, cộng đồng Linux 
 
 Cũng cần đính chính trước trong bài này: **Linux là gì**? 
 Nói 1 cách chính xác Linux chỉ "[Linux Kernel]("http://vi.wikipedia.org/wiki/H%E1%BA%A1t_nh%C3%A2n_Linux")" tuy nhiên một cách thông dụng, Linux được nhắc để chỉ những hệ điều hành mang nhân Linux. Vậy nên, các bác thích bắt xin đừng bẻ :))
-
 
 1: Linux miễn phí!
 
@@ -34,11 +28,6 @@ Hoặc bạn đã "sợ" với việc sử dụng lậu HĐH của MS. Hoặc g�
 Trên Linux bạn không cần quan tâm ứng dụng mình cài đặt có chứa virut hay không? có thêm ứng dụng rác hay không? vân vân...
 
 Thậm chí bộ phim [Gravity]("http://blogs.kde.org/2014/02/09/kde-plasma-movies") bom tấn năm qua (Ẵm giải Oscar hiệu ứng hình ảnh xuất sắc nhất) cũng được thực hiện trên Linux.
-
-
-![(http://storage9.static.itmages.com/i/14/0304/s_1393975379_2779012_59994a9429.jpeg)]("http://storage9.static.itmages.com/i/14/0304/h_1393975379_2779012_59994a9429.jpeg")
-
-Không có toolbar nhiều như thế này :))
 
 4: Bạn không cần lo về virut!
 - Không thể nói trên linux ko hề có virut

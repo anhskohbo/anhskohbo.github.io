@@ -110,15 +110,39 @@ textarea {
             box-shadow: @arguments;
 }
 
+// Opacity
+.opacity(@opacity) {
+    opacity: @opacity;
+    // IE8 filter
+    @opacity-ie: (@opacity * 100);
+    filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+// Center-align a block level element
+.center-block() {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Sizing shortcuts
+.size(@width; @height) {
+    width: @width;
+    height: @height;
+}
+
+.square(@size) {
+    .size(@size; @size);
+}
+
 // Variable
 @color-blue:         #4ECDC4;
 @color-red:          #FF6B6B;
 @color-dark:         #556270;
 @color-light:        #F3F3F3;
-
+@href-color:         #c44d58;
 @sidebar-with:       250px;
 @container-padding:  25px;
-@bottom-margin:      35px;
 
 // Global
 html,
@@ -128,13 +152,14 @@ body {
 }
 
 a {
-    color: #c44d58;
+    color: @href-color;
     text-decoration: none;
     .transition();
 
     &:hover,
     &:focus {
-        text-decoration: underline;
+        color: lighten(@href-color, 10%);
+        text-decoration: none;
     }
 }
 
@@ -148,12 +173,11 @@ h6 {
 }
 
 .container {
+    display: block;
     padding-left: @container-padding;
     padding-right: @container-padding; 
 
-    &:after {
-        clear: both;
-    }
+    &:after { clear: both; }
 
     &:before,
     &:after {
@@ -189,10 +213,7 @@ a.button {
     vertical-align: middle;
     .transition();
 
-    &:hover,
-    &:focus {
-        opacity: 0.85;
-    }
+    &:hover, &:focus { opacity: 0.85; }
 
     &:active {
         position: relative;
@@ -248,41 +269,18 @@ a.button {
     }
 }
 
-.color-blue {
-    color: @color-blue;
-}
+.color-blue { color: @color-blue; }
+.color-red { color: @color-red; }
+.color-dark { color: @color-dark; }
+.color-white { color: #fff; }
 
-.color-red {
-    color: @color-red;
-}
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
 
-.color-dark {
-    color: @color-dark;
-}
+.float-left { float: left; }
+.float-right { float: right; }
 
-.color-white {
-    color: #fff;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
 
 /* Header */
 header {
@@ -297,13 +295,10 @@ header {
     bottom: 0;
     z-index: 1;
 
-    &:hover #avatar {
-        opacity: 0.75;
-    }
-
-    @avatar-with: @sidebar-with - @container-padding * 2;
+    &:hover #avatar { opacity: 0.75; }
 
     #avatar {
+        @avatar-with: @sidebar-with - @container-padding * 2;
         width: @avatar-with;
         height: @avatar-with;
         border-radius: 50%;
@@ -318,11 +313,7 @@ header {
         margin-top: 25px;
         text-align: center;
 
-        h1,
-        h1 a,
-        h2 {
-            color: #fff;
-        }
+        h1, h1 a, h2 { color: #fff; }
 
         h1 {
             font-size: 20px;
@@ -384,15 +375,13 @@ header {
                 transition: all 0.5s ease 0s;
     }
 
-    .social-links a span {
+    .social-links a .fa {
         font-size: 24px;
         height: 24px;
         width: 24px;
     }
 
-    .social-links a:hover {
-        opacity: 1;
-    }
+    .social-links a:hover { opacity: 1; }
 }
 
 /* Main */
@@ -401,21 +390,21 @@ header {
     padding: 0;
 
     > .main-cover {
+        .transition();
         color: #eee;
         height: 235px;
-        background: url('../img/post-cover.jpg') no-repeat center center; 
+        background: url('../img/covers/main.jpg') no-repeat center center; 
         -webkit-background-size: cover;
             -moz-background-size: cover;
                 background-size: cover;
 
         .container {
+            display: block;
             position: relative;
             height: 235px;
         }
 
-        a {
-            color: #eee;
-        }
+        a { color: #eee; }
 
         .last-update {
             text-align: right;
@@ -432,13 +421,8 @@ header {
             bottom: 0;
             right: 0;
 
-            &:hover {
-                opacity: 0.75;
-            }
-
-            a {
-                text-decoration: underline;
-            }
+            &:hover { opacity: 0.75; }
+            a { text-decoration: underline; }
         }
     }
 }

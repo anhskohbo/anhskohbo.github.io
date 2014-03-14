@@ -92,7 +92,8 @@ a {
 }
 a:hover,
 a:focus {
-  text-decoration: underline;
+  color: #d1737c;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -103,6 +104,7 @@ h6 {
   font-weight: 400;
 }
 .container {
+  display: block;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -302,7 +304,7 @@ header .social-links a {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
-header .social-links a span {
+header .social-links a .fa {
   font-size: 24px;
   height: 24px;
   width: 24px;
@@ -316,14 +318,18 @@ header .social-links a:hover {
   padding: 0;
 }
 #main > .main-cover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   color: #eee;
   height: 235px;
-  background: url('../img/post-cover.jpg') no-repeat center center;
+  background: url('../img/covers/main.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
 #main > .main-cover .container {
+  display: block;
   position: relative;
   height: 235px;
 }

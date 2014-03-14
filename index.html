@@ -2,13 +2,6 @@
 layout: default
 title: Nguyễn Văn Ánh
 ---
-<section class="main-cover">
-    <div class="container">
-        <p class="last-update">Cập nhật lần cuối: <a href="/" title="{{ site.name }}"><em>{{ site.time | date: "%d/%m/%Y" }}</em></a></p>
-        <p class="image-author">Image by <a href="http://www.flickr.com/photos/gutodisse/8133587814/in/pool-2535978@N21" target="_blank" title="Gustavo Marques">@gutodisse</a></p>
-    </div>
-</section>
-
 <section class="container latest-posts">
 {% for post in paginator.posts %}
     <article class="post">
@@ -24,7 +17,16 @@ title: Nguyễn Văn Ánh
             <i class="fa fa-comments"></i>
             <span>0</span>
         </p>
-        <p>{{ post.content }}</p>
+        
+        <div class="clearfix">
+            <p class="float-right">
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <img src="{{ post.thumb }}" alt="{{ post.title }}">
+                </a>
+            </p>
+            <p>{{ post.content }}</p>
+        </div>
+        
     </article>
 {% endfor %}
 </section>
