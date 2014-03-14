@@ -9,13 +9,10 @@
         {% endif %}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Meta -->
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords" content="php,css,html,javascript,linux,ubuntu,laravel,framework">
-    <meta name="author" content="{{ site.author }}">
-    <meta name="robots" content="index,follow,archive"/>
-
+    {% include metadata.html %}
+    
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
