@@ -1,16 +1,20 @@
-name:          anhskohbo
-author:        Nguyễn Văn Ánh
-description:   anhskohbo
-url:           http://anhskohbo.github.io
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+timezone:         Asia/Saigon
 
-timezone:      Asia/Saigon
-markdown:      redcarpet
-pygments:      true
+# Permalinks
+permalink:        none
 
-permalink:     none
-paginate:      5
-paginate_path: page-:num
+# Paginate
+paginate:         1
+paginate_path:    page-:num
 
-host:          localhost
-port:          9000
-exclude:       ['*.less']
+# Setup
+title:            'anhskohbo'
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              'http://anhskohbo.github.io'
+author:
+    name:         'Nguyễn Văn Ánh'
+    url:          'https://twitter.com/anhskohbo'

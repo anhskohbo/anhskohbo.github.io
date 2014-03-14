@@ -1,0 +1,49 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        {% if page.title == "Home" %}
+            {{ site.title }} &middot; {{ site.tagline }}
+        {% else %}
+            {{ page.title }} &middot; {{ site.title }}
+        {% endif %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta -->
+    <meta name="description" content="{{ site.description | xml_escape }}">
+    <meta name="keywords" content="php,css,html,javascript,linux,ubuntu,laravel,framework">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="robots" content="index,follow,archive"/>
+
+    <!-- SEO Meta -->
+    <meta property="og:image" content="{{ site.url }}/img/avatar.jpg"/>
+    <meta property="og:title" content="{{ site.name }}"/>
+    <meta property="og:description" content="{{ site.description | xml_escape }}"/>
+    <meta property="og:url" content="{{ site.url }}"/>
+    <meta property="og:site_name" content="{{ site.name }}"/>
+    <meta property="og:type" content="website"/>
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <!-- Google Fonts & Font-awesome -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/poole.css">
+    <link rel="stylesheet" href="/css/hyde.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <!-- Modernizr & jQuery -->
+    <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <!-- Scripts -->
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
+    
+</head>

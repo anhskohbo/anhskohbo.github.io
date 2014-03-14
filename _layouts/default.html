@@ -3,139 +3,27 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ page.title }} - {{ site.name }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Meta -->
-        <meta name="description" content="{{ site.description }}">
-        <meta name="keywords" content="php,css,html,javascript,linux,ubuntu,laravel,framework">
-        <meta name="author" content="{{ site.author }}">
-        <meta name="robots" content="index,follow,archive"/>
+    {% include head.html %}
+    
+    <body class="theme-base-08">
+    
+        {% include sidebar.html %}
 
-        <!-- SEO Meta -->
-        <meta property="og:image" content="{{ site.url }}/img/avatar.jpg"/>
-        <meta property="og:title" content="{{ site.name }}"/>
-        <meta property="og:description" content="{{ site.description }}"/>
-        <meta property="og:url" content="{{ site.url }}"/>
-        <meta property="og:site_name" content="{{ site.name }}"/>
-        <meta property="og:type" content="website"/>
-
-        <!-- Google Fonts & Font-awesome -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin,vietnamese' rel='stylesheet'>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-        <!-- Stylesheet -->
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/main.css">
-
-        <!-- Code syntax -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Modernizr & jQuery -->
-        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
-    </head>
-    <body>
-
-        <!-- Header -->
-        <header class="header">
-            <div class="container">
-
-                <a href="/" title="{{ site.author }}">
-                    <img id="avatar" src="/img/avatar.jpg" alt="{{ site.author }}">
-                </a>
-
-                <hgroup>
-                    <h1><a href="/" title="{{ site.author }}">{{ site.author }}</a></h1>
-                    <h2>PHP Developer</h2>
-                </hgroup>
-
-                <ul class="menu-list">
-                    <li>
-                        <a target="_blank" href="http://anhskohbo.github.io/php-the-right-way/" title="PHP: Đúng cách">PHP: Đúng cách</a>
-                    </li>
-
-                    <li>
-                        <a target="_blank" href="http://saskphp.com/" title="Saskphp Framework">Saskphp Framework</a>
-                    </li>
-
-                    <li>
-                        <a href="/archive.html#php-design-pattern" title="PHP Design Pattern">PHP Design Pattern</a>
-                    </li>
-
-                    <li>
-                        <a href="/archive.html#laravel" title="Laravel tutorials">Laravel tutorials</a>
-                    </li>
-                </ul>
-
-                <p class="text-center">
-                    <a class="button white outline" href="/archive.html" title="Lưu trữ bài viết">Lưu trữ bài viết</a>
-                </p>
-
-                <div class="social-links">
-                    <a data-toggle="tooltip" title="Twitter" target="_blank" href="https://twitter.com/anhskohbo">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-
-                    <a data-toggle="tooltip" title="Github" target="_blank" href="https://github.com/anhskohbo">
-                        <i class="fa fa-github"></i>
-                    </a>
-
-                    <a data-toggle="tooltip" title="Google+" target="_blank" href="https://google.com/+nguyenvananh-anhskohbo">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-
-                    <a data-toggle="tooltip" title="Subscribe" target="_blank" href="/feed.xml">
-                        <i class="fa fa-rss"></i>
-                    </a>
-                </div>
-
-            </div>
-        </header><!-- /#header -->
-        
-        <!-- Main -->
-        <div id="main">
-            
-            <!-- Main cover -->
-            <section class="main-cover">
-                <div class="container">
-                    <p class="last-update">Cập nhật lần cuối: <a href="/" title="{{ site.name }}"><em>{{ site.time | date: "%d/%m/%Y" }}</em></a></p>
-                    <p class="image-author">Image by <a href="http://www.flickr.com/photos/gutodisse/8133587814/in/pool-2535978@N21" target="_blank" title="Gustavo Marques">@gutodisse</a></p>
-                </div>
-            </section>
-
-            <!-- Content -->
+        <div class="content container">
             {{ content }}
-            
-            <!-- Footer -->
-            <footer class="container">
+
+            <footer>
                 <p>
                     &copy; 2014 <a href="http://github.com/anhskohbo" title="Anhskohbo">anhskohbo</a>.
+                </p>
+                <p>
                     Lưu trữ trên <a href="http://github.com" title="Github">Github</a>.
-                    Xây dựng bởi <a href="http://jekyllrb.com">Jekyll</a>.
+                    Xây dựng bởi <a href="http://jekyllrb.com">Jekyll</a>,
+                    sử dụng <a href="http://hyde.getpoole.com/">Hyde</a> theme.
                 </p>
             </footer><!-- /#footer -->
-        </div><!-- /#main -->
+        </div><!-- /.content -->
 
-        <!-- App Scripts -->
-        <script src="/js/foundation.min.js"></script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
-
-        <!-- Google Analytics -->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-48932411-1', 'anhskohbo.github.io');
-            ga('send', 'pageview');
-        </script>
-        
     </body>
 </html>
