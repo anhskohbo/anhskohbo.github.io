@@ -28,7 +28,7 @@ Một bài viết phải được khai báo trước đầy đủ các yếu t�
 * `layout`: Layout phải là `post`.
 * `title`: Tiêu đề không quá 70 ký tự kể cả dấu cách. Phải giống với slug của bài viết, viết thường có dấu (hoặc không).
 * `category`: Không sử dụng **categoies**. Chỉ được dùng một category cho 1 bài viết. Phải nằm trong: [linux|php].
-* `image`: Tên ảnh phải giống với tên slug với 1 đuôi mở rộng là [jpg|png|gif], phải được đặt trong thư mục `/img/posts`.
+* `image`: Tên ảnh phải giống với tên slug với 1 đuôi mở rộng là [jpg|png|gif], phải được đặt trong thư mục `/img/posts`. Ảnh cần có size 980x325px
 * `tags`: Sử dụng không quá 3 tag, cách nhau bằng dấu cách.
 * `date`: Ngày viết bài phải tuân theo định dạng: `%Y-%m-%d %H:%M:%S`.
 
