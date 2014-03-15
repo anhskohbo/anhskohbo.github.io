@@ -45,8 +45,17 @@ a {
     float: right;
 }
 
+.message,
+code {
+    background: #eee;
+}
+
 /* Sidebar */
 .sidebar {
+    &:hover .avatar {
+        opacity: 0.75;
+    }
+
     .sidebar-about {
         h1 {
             font-family: "PT Sans", Helvetica, Arial, sans-serif;
