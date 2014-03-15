@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      7 lý do người dùng Windows XP nên chuyển sang Linux
-thumb:      /img/thumbs/7-ly-do-nguoi-dung-window-xp-nen-chuyen-sang-linux.png
+image:      /img/posts/7-ly-do-nguoi-dung-window-xp-nen-chuyen-sang-linux.jpg
 date:       2014-03-12 17:52:00
 category:   linux
 tags:       linux windows-xp
