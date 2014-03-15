@@ -3,7 +3,8 @@ layout:     post
 title:      7 lý do người dùng Windows XP nên chuyển sang Linux
 thumb:      /img/thumbs/7-ly-do-nguoi-dung-window-xp-nen-chuyen-sang-linux.png
 date:       2014-03-12 17:52:00
-categories: linux
+category:   linux
+tags:       linux windows-xp
 ---
 
 Tôi đang lang thang đọc tut lập trình trên mạng thì lại bắt gặp 1 tit: "[Windows XP home users should upgrade to Linux...]("http://betanews.com/2014/01/30/windows-xp-home-users-should-upgrade-to-linux-not-windows-8-1/")".

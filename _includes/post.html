@@ -1,0 +1,53 @@
+{% assign post = include.post %}
+<article class="post">
+
+    <h1 class="post-title">
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </h1>
+
+   <div class="post-date cleafix">
+        <div class="post-category float-right">
+            {% for category in post.categories %}
+                <a href="/category/{{ category }}.html" title="{{ category }}">{{ category }}</a>
+            {% endfor %}
+        </div>
+        <p>
+            <i class="fa fa-calendar"></i>
+            <span>{{ post.date | date: "%d/%m/%Y %H:%m" }}</span>
+        </p>
+    </div>
+    
+    {% if content %}
+        <div class="post-share">
+            <div class="g-plusone" data-size="medium"></div>
+            <script type="text/javascript">
+              window.___gcfg = {lang: 'vi'};
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
+
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="anhskohbo">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+    {% endif %}
+
+    <div class="post-content">
+        {% if content %}
+            {{ content }}
+        {% else %}
+            {{ post.content }}
+        {% endif %}
+    </div>
+    
+    {% if content %}
+        <div class="post-tags">
+            {% for tag in post.tags %}
+                <a href="/tag/{{ tag }}.html" title="{{ tag }}">{{ tag }}</a>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+</article>
