@@ -13,11 +13,11 @@ Tôi có ý định đăng một bài viết khác (7 lý do người dùng Wind
 Thiết nghĩ nên đăng một bài giới thiệu qua website này trước đã :).
 
 Trang web này tôi có ý định chủ yếu đăng về những vấn đề sau:
-- Linux (tôi yêu Linux và muốn giới thiệu nó cho mọi người).
-- PHP (chủ yếu Laravel framework).
-- Javascript (và các thành phần liên quan).
-- HTML, CSS.
-- Chắc còn vài cái nữa...
+* Linux (tôi yêu Linux và muốn giới thiệu nó cho mọi người).
+* PHP (chủ yếu Laravel framework).
+* Javascript (và các thành phần liên quan).
+* HTML, CSS.
+* Chắc còn vài cái nữa...
 
 Trang web được lưu trữ trên trên [Github](https://github.com/anhskohbo/anhskohbo.github.io), sử dụng Jekyll và lấy theme [hyde](http://hyde.getpoole.com), tôi có chỉnh sửa vài phần để hợp mắt.
 Cấp giấy phép MIT  bạn có thể hoàn toàn xem mã nguồn lấy và chỉnh sửa nó (thực ra cũng chả có gì mà xem ^^).
