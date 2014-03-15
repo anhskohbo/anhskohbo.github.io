@@ -8,12 +8,12 @@
             <h1>
                 <a href="/" title="{{ site.author }}">{{ site.name }}</a>
             </h1>
-            <p class="lead">PHP, CSS3, HTML5, Javascript, NodeJS, Linux</p>
+            <p class="lead">PHP, HTML5, CSS3, Javascript, NodeJS, Linux</p>
         </div>
 
         <ul class="sidebar-nav">
             <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
-                <a href="/" title="Home">Home</a>
+                <a href="/" title="Trang chủ">Trang chủ</a>
             </li>
             {% for node in site.pages %}
                 {% if node.title != null %}
@@ -30,15 +30,12 @@
             <a title="Twitter" target="_blank" href="https://twitter.com/anhskohbo">
                 <i class="fa fa-twitter"></i>
             </a>
-
             <a title="Github" target="_blank" href="https://github.com/anhskohbo">
                 <i class="fa fa-github"></i>
             </a>
-
             <a title="Google+" target="_blank" href="https://google.com/+nguyenvananh-anhskohbo">
                 <i class="fa fa-google-plus"></i>
             </a>
-
             <a title="Subscribe" target="_blank" href="/atom.xml">
                 <i class="fa fa-rss"></i>
             </a>

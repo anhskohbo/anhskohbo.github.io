@@ -2,11 +2,15 @@
 layout: default
 ---
 
+<!-- Post -->
 {% include post.html post=page %}
 
 <!-- Related -->
 <div class="related">
-    <h2>Related Posts</h2>
+    <h2>
+        <i class="fa fa-bookmark"></i>
+        <span>Bài viết liên quan</span>
+    </h2>
     <ul class="related-posts">
         {% for post in site.related_posts limit:3 %}
         <li>
@@ -21,14 +25,16 @@ layout: default
     </ul>
 </div>
 
-<!-- Comment -->
-<div id="comment">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//anhskohbo.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-</div>
+{% if post.comment != false %}
+    <!-- Comment -->
+    <div id="comment">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//anhskohbo.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+    </div>
+{% endif %}
