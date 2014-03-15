@@ -1,15 +1,13 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+---
+---
+/* TEAM */
+Your title: anhskohbo
+Site: anhsk.ohbo@gmail.com
+Twitter: anhskohbo.
+Location: Ha Noi, Viet Nam.
 
-# TEAM
-
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+/* SITE */
+Last update: {{ site.time | date: "%Y/%m/%d" }}
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery
+Software: Sublime Text 3, Ubuntu
