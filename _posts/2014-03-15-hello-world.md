@@ -13,6 +13,7 @@ Tôi có ý định đăng một bài viết khác (7 lý do người dùng Wind
 Thiết nghĩ nên đăng một bài giới thiệu qua website này trước đã :).
 
 Trang web này tôi có ý định chủ yếu đăng về những vấn đề sau:
+
 * Linux (tôi yêu Linux và muốn giới thiệu nó cho mọi người).
 * PHP (chủ yếu Laravel framework).
 * Javascript (và các thành phần liên quan).
