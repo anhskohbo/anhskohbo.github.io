@@ -151,7 +151,7 @@ Convert::toViqr($tcvn3, UConvert::TCVN3);
 
 ## Hạn chế
 
-- Chưa hỗ trợ đầy đủ các bảng mã (Sẽ dần có sớm).
+- Chưa hỗ trợ đầy đủ các bảng mã (sẽ dần có sớm).
 - Thiếu cơ chế tự động nhận diện bảng mã của chuỗi nhập vào (đang xem xét tuy nhiên gặp khó khăn vài regex kém @@)
 - Đọc, chuyển đổi và ghi từ text-file, hay word, excel...
 - ...
