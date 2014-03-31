@@ -9,7 +9,7 @@ date:     2014-03-15 18:15:00
 
 Xin chào!
 
-Tôi có ý định đăng một bài viết khác (7 lý do người dùng Windows XP nên chuyển sang Linux) nhưng ngẫm lại thôi.
+Tôi có ý định đăng một bài viết khác nhưng ngẫm lại thôi.
 Thiết nghĩ nên đăng một bài giới thiệu qua website này trước đã :).
 
 Trang web này tôi có ý định chủ yếu đăng về những vấn đề sau:
