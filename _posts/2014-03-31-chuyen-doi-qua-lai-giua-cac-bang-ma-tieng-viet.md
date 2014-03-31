@@ -42,7 +42,7 @@ UConvert có sẵn trên [Github](https://github.com/anhskohbo) và [Packagist](
 
 Nếu bạn sử dụng [Composer](https://getcomposer.org/) để quản lý thư viện cho dự án của mình, một cách dễ dàng nhất, thêm `"anhskohbo/u-convert": "dev-master"` vào phần `require` trong file `composer.json`:
 
-```json
+```
 "require": {
 	"anhskohbo/u-convert": "dev-master"
 }
@@ -50,7 +50,7 @@ Nếu bạn sử dụng [Composer](https://getcomposer.org/) để quản lý th
 
 Tiếp theo, update lại các gói:
 
-```shell
+```
 composer update
 ```
 
@@ -65,11 +65,7 @@ Giải nén tập tin và bạn nên để tên thư mục chứa mã nguồn l�
 Nhúng nó vào nơi bạn cần sử dụng:
 
 ```php
-<?php
-
 require '/path-to-libs/u-convert/autoload.php';
-
-//..
 ```
 
 ## Sử dụng
@@ -94,8 +90,6 @@ const VIQR    = 'VIQR';
 UConvert cung cấp một cách rất dễ dàng để sử dụng, hãy xem một ví dụ:
 
 ```php
-<?php
-
 // Autoload library...
 
 use Anhskohbo\UConvert\UConvert;
@@ -123,14 +117,13 @@ Sau khi khởi tạo bạn cần gọi method `transform(string $toCharacter)` v
 
 ### Gọi trực tiếp qua static.
 
-Ngoài ra thay vì phải khởi tạo lớp, `UConvert` cho phéo bạn gọi trực tiếp tới một số static-method *đặc biệt* chuyển đổi.
+Ngoài ra thay vì phải khởi tạo lớp, UConvert cho phéo bạn gọi trực tiếp tới một số static-method *đặc biệt* chuyển đổi.
 
 Những static-method đặc biệt là: `to` + tên bảng mã sẵn có (trong hệ thống) viết liền và viết hoa chữ cái đầu.
 
 Dưới đây là một ví dụ gọi trực tiếp kiểu static:
 
 ```php
-
 use Anhskohbo\UConvert\UConvert;
 
 UConvert::toUnicode($vni, UConvert::VIQR);
@@ -140,7 +133,6 @@ UConvert::toVni($unicde, UConvert::UNICODE);
 UConvert::toTcvn3($vni, UConvert::VNI);
 
 Convert::toViqr($tcvn3, UConvert::TCVN3);
-
 ```
 
 ## Hạn chế
