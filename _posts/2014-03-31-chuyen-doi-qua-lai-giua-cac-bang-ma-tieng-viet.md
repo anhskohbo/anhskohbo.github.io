@@ -50,7 +50,7 @@ Nếu bạn sử dụng [Composer](https://getcomposer.org/) để quản lý th
 
 Tiếp theo, update lại các gói:
 
-```
+```sh
 composer update
 ```
 
@@ -65,7 +65,11 @@ Giải nén tập tin và bạn nên để tên thư mục chứa mã nguồn l�
 Nhúng nó vào nơi bạn cần sử dụng:
 
 ```php
+<?php
+
 require '/path-to-libs/u-convert/autoload.php';
+
+//..
 ```
 
 ## Sử dụng
@@ -79,10 +83,17 @@ Tất cả các tên bảng mã đều *phải* viết **HOA** và liền không
 Trong lớp `Anhskohbo\UConvert\UConvert` một số hằng được khai báo giúp bạn nhất quán trong việc gọi tên bảng mã:
 
 ```php
-const UNICODE = 'UNICODE';
-const TCVN3   = 'TCVN3';
-const VNI     = 'VNI';
-const VIQR    = 'VIQR';
+<?php
+
+namespace Anhskohbo\UConvert;
+
+class UConvert implements UConvertInterface {
+
+	const UNICODE = 'UNICODE';
+	const TCVN3   = 'TCVN3';
+	const VNI     = 'VNI';
+	const VIQR    = 'VIQR';
+
 ```
 
 ### Khởi tạo thông thường
@@ -90,6 +101,7 @@ const VIQR    = 'VIQR';
 UConvert cung cấp một cách rất dễ dàng để sử dụng, hãy xem một ví dụ:
 
 ```php
+<?php
 // Autoload library...
 
 use Anhskohbo\UConvert\UConvert;
@@ -124,6 +136,8 @@ Những static-method đặc biệt là: `to` + tên bảng mã sẵn có (trong
 Dưới đây là một ví dụ gọi trực tiếp kiểu static:
 
 ```php
+<?php
+
 use Anhskohbo\UConvert\UConvert;
 
 UConvert::toUnicode($vni, UConvert::VIQR);
