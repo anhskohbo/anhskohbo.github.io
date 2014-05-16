@@ -40,4 +40,4 @@ Gỡ cài đặt nodejs nếu bạn muốn:
 sudo apt-get remove nodejs npm
 ```
 
-> Bài viết này có thể được coi là một phần được dịch lại từ trang wiki của nodejs. Đối với các distro khác của Linux, hoặc các OS khác vui lòng tham khảo  thêm tại địa chỉ: <https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manage>
+> Bài viết này có thể được coi là một phần được dịch lại từ trang wiki của nodejs. Đối với các distro khác của Linux, hoặc các OS khác vui lòng tham khảo  thêm tại địa chỉ: <https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager>
